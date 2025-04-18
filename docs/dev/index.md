@@ -1,26 +1,26 @@
-# BBOT Developer Reference
+# OSINTER Developer Reference
 
-BBOT exposes a Python API that allows you to create, start, and stop scans.
+OSINTER exposes a Python API that allows you to create, start, and stop scans.
 
-Documented in this section are commonly-used classes and functions within BBOT, along with usage examples.
+Documented in this section are commonly-used classes and functions within OSINTER, along with usage examples.
 
-## Adding BBOT to Your Python Project
+## Adding OSINTER to Your Python Project
 
-If you are using Poetry, you can add BBOT to your python environment like this:
+If you are using Poetry, you can add OSINTER to your python environment like this:
 
 ```bash
 # stable
-poetry add bbot
+poetry add osinter
 
 # bleeding-edge (dev branch)
-poetry add bbot --allow-prereleases
+poetry add osinter --allow-prereleases
 ```
 
-## Running a BBOT Scan from Python
+## Running a OSINTER Scan from Python
 
 #### Synchronous
 ```python
-from bbot.scanner import Scanner
+from osinter.scanner import Scanner
 
 if __name__ == "__main__":
     scan = Scanner("evilcorp.com", presets=["subdomain-enum"])
@@ -30,7 +30,7 @@ if __name__ == "__main__":
 
 #### Asynchronous
 ```python
-from bbot.scanner import Scanner
+from osinter.scanner import Scanner
 
 async def main():
     scan = Scanner("evilcorp.com", presets=["subdomain-enum"])

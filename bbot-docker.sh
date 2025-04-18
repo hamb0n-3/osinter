@@ -1,3 +1,3 @@
-# OUTPUTS SCAN DATA TO ~/.bbot/scans
+# OUTPUTS SCAN DATA TO ~/.osinter/scans
 
-docker run --rm -it -v "$HOME/.bbot/scans:/root/.bbot/scans" -v "$HOME/.config/bbot:/root/.config/bbot" blacklanternsecurity/bbot:stable "$@"
+docker run --rm -it -v "$HOME/.osinter/scans:/root/.osinter/scans" -v "$HOME/.config/osinter:/root/.config/osinter" blacklanternsecurity/osinter:stable "$@"

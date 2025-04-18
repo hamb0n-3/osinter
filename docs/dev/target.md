@@ -1,9 +1,9 @@
-::: bbot.scanner.target.BaseTarget
+::: osinter.scanner.target.BaseTarget
 
-::: bbot.scanner.target.ScanSeeds
+::: osinter.scanner.target.ScanSeeds
 
-::: bbot.scanner.target.ScanWhitelist
+::: osinter.scanner.target.ScanWhitelist
 
-::: bbot.scanner.target.ScanBlacklist
+::: osinter.scanner.target.ScanBlacklist
 
-::: bbot.scanner.target.BBOTTarget
+::: osinter.scanner.target.OSINTERTarget

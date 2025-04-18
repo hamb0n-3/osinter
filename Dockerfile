@@ -4,7 +4,7 @@ ENV LANG=C.UTF-8
 ENV LC_ALL=C.UTF-8
 ENV PIP_NO_CACHE_DIR=off
 
-WORKDIR /usr/src/bbot
+WORKDIR /usr/src/osinter
 
 RUN apt-get update && apt-get install -y openssl gcc git make unzip curl wget vim nano sudo
 
@@ -14,4 +14,4 @@ RUN pip install .
 
 WORKDIR /root
 
-ENTRYPOINT [ "bbot" ]
+ENTRYPOINT [ "osinter" ]

@@ -1,1 +1,1 @@
-::: bbot.scanner.Scanner
+::: osinter.scanner.Scanner

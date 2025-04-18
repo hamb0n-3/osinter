@@ -1,1 +1,1 @@
-::: bbot.modules.base.BaseModule
+::: osinter.modules.base.BaseModule

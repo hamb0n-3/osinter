@@ -1,12 +1,12 @@
-Below is a list of every default BBOT preset, including its YAML.
+Below is a list of every default OSINTER preset, including its YAML.
 
-<!-- BBOT PRESET YAML -->
+<!-- OSINTER PRESET YAML -->
 ## **baddns-intense**
 
 Run all baddns modules and submodules.
 
 ??? note "`baddns-intense.yml`"
-    ```yaml title="~/.bbot/presets/baddns-intense.yml"
+    ```yaml title="~/.osinter/presets/baddns-intense.yml"
     description: Run all baddns modules and submodules.
     
     
@@ -30,7 +30,7 @@ Modules: [4]("`baddns_direct`, `baddns_zone`, `baddns`, `httpx`")
 Enumerate cloud resources such as storage buckets, etc.
 
 ??? note "`cloud-enum.yml`"
-    ```yaml title="~/.bbot/presets/cloud-enum.yml"
+    ```yaml title="~/.osinter/presets/cloud-enum.yml"
     description: Enumerate cloud resources such as storage buckets, etc.
     
     include:
@@ -49,7 +49,7 @@ Modules: [60]("`anubisdb`, `asn`, `azure_realm`, `azure_tenant`, `baddns_direct`
 Enumerate Git repositories, Docker images, etc.
 
 ??? note "`code-enum.yml`"
-    ```yaml title="~/.bbot/presets/code-enum.yml"
+    ```yaml title="~/.osinter/presets/code-enum.yml"
     description: Enumerate Git repositories, Docker images, etc.
     
     flags:
@@ -65,7 +65,7 @@ Modules: [18]("`apkpure`, `code_repository`, `docker_pull`, `dockerhub`, `git_cl
 Recursive web directory brute-force (aggressive)
 
 ??? note "`dirbust-heavy.yml`"
-    ```yaml title="~/.bbot/presets/web/dirbust-heavy.yml"
+    ```yaml title="~/.osinter/presets/web/dirbust-heavy.yml"
     description: Recursive web directory brute-force (aggressive)
     
     include:
@@ -116,7 +116,7 @@ Modules: [5]("`ffuf_shortnames`, `ffuf`, `httpx`, `iis_shortnames`, `wayback`")
 Recursive web directory brute-force (aggressive)
 
 ??? note "`dirbust-heavy.yml`"
-    ```yaml title="~/.bbot/presets/dirbust-heavy.yml"
+    ```yaml title="~/.osinter/presets/dirbust-heavy.yml"
     description: Recursive web directory brute-force (aggressive)
     
     include:
@@ -167,7 +167,7 @@ Modules: [5]("`ffuf_shortnames`, `ffuf`, `httpx`, `iis_shortnames`, `wayback`")
 Basic web directory brute-force (surface-level directories only)
 
 ??? note "`dirbust-light.yml`"
-    ```yaml title="~/.bbot/presets/web/dirbust-light.yml"
+    ```yaml title="~/.osinter/presets/web/dirbust-light.yml"
     description: Basic web directory brute-force (surface-level directories only)
     
     include:
@@ -192,7 +192,7 @@ Modules: [4]("`ffuf_shortnames`, `ffuf`, `httpx`, `iis_shortnames`")
 Basic web directory brute-force (surface-level directories only)
 
 ??? note "`dirbust-light.yml`"
-    ```yaml title="~/.bbot/presets/dirbust-light.yml"
+    ```yaml title="~/.osinter/presets/dirbust-light.yml"
     description: Basic web directory brute-force (surface-level directories only)
     
     include:
@@ -217,7 +217,7 @@ Modules: [4]("`ffuf_shortnames`, `ffuf`, `httpx`, `iis_shortnames`")
 Comprehensive scan for all IIS/.NET specific modules and module settings
 
 ??? note "`dotnet-audit.yml`"
-    ```yaml title="~/.bbot/presets/web/dotnet-audit.yml"
+    ```yaml title="~/.osinter/presets/web/dotnet-audit.yml"
     description: Comprehensive scan for all IIS/.NET specific modules and module settings
     
     
@@ -254,7 +254,7 @@ Modules: [8]("`ajaxpro`, `badsecrets`, `dotnetnuke`, `ffuf_shortnames`, `ffuf`, 
 Comprehensive scan for all IIS/.NET specific modules and module settings
 
 ??? note "`dotnet-audit.yml`"
-    ```yaml title="~/.bbot/presets/dotnet-audit.yml"
+    ```yaml title="~/.osinter/presets/dotnet-audit.yml"
     description: Comprehensive scan for all IIS/.NET specific modules and module settings
     
     
@@ -291,7 +291,7 @@ Modules: [8]("`ajaxpro`, `badsecrets`, `dotnetnuke`, `ffuf_shortnames`, `ffuf`, 
 Enumerate email addresses from APIs, web crawling, etc.
 
 ??? note "`email-enum.yml`"
-    ```yaml title="~/.bbot/presets/email-enum.yml"
+    ```yaml title="~/.osinter/presets/email-enum.yml"
     description: Enumerate email addresses from APIs, web crawling, etc.
     
     flags:
@@ -310,7 +310,7 @@ Modules: [8]("`dehashed`, `dnscaa`, `dnstlsrpt`, `emailformat`, `hunterio`, `pgp
 Scan only the provided targets as fast as possible - no extra discovery
 
 ??? note "`fast.yml`"
-    ```yaml title="~/.bbot/presets/fast.yml"
+    ```yaml title="~/.osinter/presets/fast.yml"
     description: Scan only the provided targets as fast as possible - no extra discovery
     
     exclude_modules:
@@ -338,7 +338,7 @@ Modules: [0]("")
 Recursively enumerate IIS shortnames
 
 ??? note "`iis-shortnames.yml`"
-    ```yaml title="~/.bbot/presets/web/iis-shortnames.yml"
+    ```yaml title="~/.osinter/presets/web/iis-shortnames.yml"
     description: Recursively enumerate IIS shortnames
     
     flags:
@@ -360,7 +360,7 @@ Modules: [3]("`ffuf_shortnames`, `httpx`, `iis_shortnames`")
 Recursively enumerate IIS shortnames
 
 ??? note "`iis-shortnames.yml`"
-    ```yaml title="~/.bbot/presets/iis-shortnames.yml"
+    ```yaml title="~/.osinter/presets/iis-shortnames.yml"
     description: Recursively enumerate IIS shortnames
     
     flags:
@@ -382,7 +382,7 @@ Modules: [3]("`ffuf_shortnames`, `httpx`, `iis_shortnames`")
 Everything everywhere all at once
 
 ??? note "`kitchen-sink.yml`"
-    ```yaml title="~/.bbot/presets/kitchen-sink.yml"
+    ```yaml title="~/.osinter/presets/kitchen-sink.yml"
     description: Everything everywhere all at once
     
     include:
@@ -412,7 +412,7 @@ Modules: [88]("`anubisdb`, `apkpure`, `asn`, `azure_realm`, `azure_tenant`, `bad
 Run nuclei scans against all discovered targets
 
 ??? note "`nuclei.yml`"
-    ```yaml title="~/.bbot/presets/nuclei/nuclei.yml"
+    ```yaml title="~/.osinter/presets/nuclei/nuclei.yml"
     description: Run nuclei scans against all discovered targets
     
     modules:
@@ -458,7 +458,7 @@ Modules: [3]("`httpx`, `nuclei`, `portfilter`")
 Run nuclei scans against all discovered targets
 
 ??? note "`nuclei.yml`"
-    ```yaml title="~/.bbot/presets/nuclei.yml"
+    ```yaml title="~/.osinter/presets/nuclei.yml"
     description: Run nuclei scans against all discovered targets
     
     modules:
@@ -504,7 +504,7 @@ Modules: [3]("`httpx`, `nuclei`, `portfilter`")
 Run nuclei scans against all discovered targets, using budget mode to look for low hanging fruit with greatly reduced number of requests
 
 ??? note "`nuclei-budget.yml`"
-    ```yaml title="~/.bbot/presets/nuclei/nuclei-budget.yml"
+    ```yaml title="~/.osinter/presets/nuclei/nuclei-budget.yml"
     description: Run nuclei scans against all discovered targets, using budget mode to look for low hanging fruit with greatly reduced number of requests
     
     modules:
@@ -535,7 +535,7 @@ Modules: [3]("`httpx`, `nuclei`, `portfilter`")
 Run nuclei scans against all discovered targets, using budget mode to look for low hanging fruit with greatly reduced number of requests
 
 ??? note "`nuclei-budget.yml`"
-    ```yaml title="~/.bbot/presets/nuclei-budget.yml"
+    ```yaml title="~/.osinter/presets/nuclei-budget.yml"
     description: Run nuclei scans against all discovered targets, using budget mode to look for low hanging fruit with greatly reduced number of requests
     
     modules:
@@ -566,7 +566,7 @@ Modules: [3]("`httpx`, `nuclei`, `portfilter`")
 Run nuclei scans against all discovered targets, allowing for spidering, against ALL URLs, and with additional discovery modules.
 
 ??? note "`nuclei-intense.yml`"
-    ```yaml title="~/.bbot/presets/nuclei/nuclei-intense.yml"
+    ```yaml title="~/.osinter/presets/nuclei/nuclei-intense.yml"
     description: Run nuclei scans against all discovered targets, allowing for spidering, against ALL URLs, and with additional discovery modules.
     
     modules:
@@ -606,7 +606,7 @@ Modules: [6]("`httpx`, `nuclei`, `portfilter`, `robots`, `urlscan`, `wayback`")
 Run nuclei scans against all discovered targets, allowing for spidering, against ALL URLs, and with additional discovery modules.
 
 ??? note "`nuclei-intense.yml`"
-    ```yaml title="~/.bbot/presets/nuclei-intense.yml"
+    ```yaml title="~/.osinter/presets/nuclei-intense.yml"
     description: Run nuclei scans against all discovered targets, allowing for spidering, against ALL URLs, and with additional discovery modules.
     
     modules:
@@ -646,7 +646,7 @@ Modules: [6]("`httpx`, `nuclei`, `portfilter`, `robots`, `urlscan`, `wayback`")
 Run nuclei scans against all discovered targets, running templates which match discovered technologies
 
 ??? note "`nuclei-technology.yml`"
-    ```yaml title="~/.bbot/presets/nuclei/nuclei-technology.yml"
+    ```yaml title="~/.osinter/presets/nuclei/nuclei-technology.yml"
     description: Run nuclei scans against all discovered targets, running templates which match discovered technologies
     
     modules:
@@ -681,7 +681,7 @@ Modules: [3]("`httpx`, `nuclei`, `portfilter`")
 Run nuclei scans against all discovered targets, running templates which match discovered technologies
 
 ??? note "`nuclei-technology.yml`"
-    ```yaml title="~/.bbot/presets/nuclei-technology.yml"
+    ```yaml title="~/.osinter/presets/nuclei-technology.yml"
     description: Run nuclei scans against all discovered targets, running templates which match discovered technologies
     
     modules:
@@ -716,7 +716,7 @@ Modules: [3]("`httpx`, `nuclei`, `portfilter`")
 Discover new web parameters via brute-force
 
 ??? note "`paramminer.yml`"
-    ```yaml title="~/.bbot/presets/web/paramminer.yml"
+    ```yaml title="~/.osinter/presets/web/paramminer.yml"
     description: Discover new web parameters via brute-force
     
     flags:
@@ -740,7 +740,7 @@ Modules: [4]("`httpx`, `paramminer_cookies`, `paramminer_getparams`, `paramminer
 Discover new web parameters via brute-force
 
 ??? note "`paramminer.yml`"
-    ```yaml title="~/.bbot/presets/paramminer.yml"
+    ```yaml title="~/.osinter/presets/paramminer.yml"
     description: Discover new web parameters via brute-force
     
     flags:
@@ -764,7 +764,7 @@ Modules: [4]("`httpx`, `paramminer_cookies`, `paramminer_getparams`, `paramminer
 Recursive web spider
 
 ??? note "`spider.yml`"
-    ```yaml title="~/.bbot/presets/spider.yml"
+    ```yaml title="~/.osinter/presets/spider.yml"
     description: Recursive web spider
     
     modules:
@@ -793,7 +793,7 @@ Modules: [1]("`httpx`")
 Recursive web spider with more aggressive settings
 
 ??? note "`spider-intense.yml`"
-    ```yaml title="~/.bbot/presets/spider-intense.yml"
+    ```yaml title="~/.osinter/presets/spider-intense.yml"
     description: Recursive web spider with more aggressive settings
     
     include:
@@ -818,7 +818,7 @@ Modules: [1]("`httpx`")
 Enumerate subdomains via APIs, brute-force
 
 ??? note "`subdomain-enum.yml`"
-    ```yaml title="~/.bbot/presets/subdomain-enum.yml"
+    ```yaml title="~/.osinter/presets/subdomain-enum.yml"
     description: Enumerate subdomains via APIs, brute-force
     
     flags:
@@ -852,7 +852,7 @@ Modules: [53]("`anubisdb`, `asn`, `azure_realm`, `azure_tenant`, `baddns_direct`
 Detect technologies via Wappalyzer, Nuclei, and FingerprintX
 
 ??? note "`tech-detect.yml`"
-    ```yaml title="~/.bbot/presets/tech-detect.yml"
+    ```yaml title="~/.osinter/presets/tech-detect.yml"
     description: Detect technologies via Wappalyzer, Nuclei, and FingerprintX
     
     modules:
@@ -875,7 +875,7 @@ Modules: [4]("`fingerprintx`, `httpx`, `nuclei`, `wappalyzer`")
 Quick web scan
 
 ??? note "`web-basic.yml`"
-    ```yaml title="~/.bbot/presets/web-basic.yml"
+    ```yaml title="~/.osinter/presets/web-basic.yml"
     description: Quick web scan
     
     include:
@@ -894,7 +894,7 @@ Modules: [18]("`azure_realm`, `baddns`, `badsecrets`, `bucket_amazon`, `bucket_a
 Take screenshots of webpages
 
 ??? note "`web-screenshots.yml`"
-    ```yaml title="~/.bbot/presets/web-screenshots.yml"
+    ```yaml title="~/.osinter/presets/web-screenshots.yml"
     description: Take screenshots of webpages
     
     flags:
@@ -905,7 +905,7 @@ Take screenshots of webpages
         gowitness:
           resolution_x: 1440
           resolution_y: 900
-          # folder to output web screenshots (default is inside ~/.bbot/scans/scan_name)
+          # folder to output web screenshots (default is inside ~/.osinter/scans/scan_name)
           output_path: ""
           # whether to take screenshots of social media pages
           social: True
@@ -920,7 +920,7 @@ Modules: [3]("`gowitness`, `httpx`, `social`")
 Aggressive web scan
 
 ??? note "`web-thorough.yml`"
-    ```yaml title="~/.bbot/presets/web-thorough.yml"
+    ```yaml title="~/.osinter/presets/web-thorough.yml"
     description: Aggressive web scan
     
     include:
@@ -934,13 +934,13 @@ Aggressive web scan
 
 
 Modules: [29]("`ajaxpro`, `azure_realm`, `baddns`, `badsecrets`, `bucket_amazon`, `bucket_azure`, `bucket_digitalocean`, `bucket_firebase`, `bucket_google`, `bypass403`, `dastardly`, `dotnetnuke`, `ffuf_shortnames`, `filedownload`, `generic_ssrf`, `git`, `host_header`, `httpx`, `hunt`, `iis_shortnames`, `ntlm`, `oauth`, `robots`, `securitytxt`, `smuggler`, `sslcert`, `telerik`, `url_manipulation`, `wappalyzer`")
-<!-- END BBOT PRESET YAML -->
+<!-- END OSINTER PRESET YAML -->
 
 ## Table of Default Presets
 
 Here is a the same data, but in a table:
 
-<!-- BBOT PRESETS -->
+<!-- OSINTER PRESETS -->
 | Preset            | Category   | Description                                                                                                                              | # Modules   | Modules                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |-------------------|------------|------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | baddns-intense    |            | Run all baddns modules and submodules.                                                                                                   | 4           | baddns, baddns_direct, baddns_zone, httpx                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
@@ -974,4 +974,4 @@ Here is a the same data, but in a table:
 | web-basic         |            | Quick web scan                                                                                                                           | 18          | azure_realm, baddns, badsecrets, bucket_amazon, bucket_azure, bucket_firebase, bucket_google, ffuf_shortnames, filedownload, git, httpx, iis_shortnames, ntlm, oauth, robots, securitytxt, sslcert, wappalyzer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | web-screenshots   |            | Take screenshots of webpages                                                                                                             | 3           | gowitness, httpx, social                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | web-thorough      |            | Aggressive web scan                                                                                                                      | 29          | ajaxpro, azure_realm, baddns, badsecrets, bucket_amazon, bucket_azure, bucket_digitalocean, bucket_firebase, bucket_google, bypass403, dastardly, dotnetnuke, ffuf_shortnames, filedownload, generic_ssrf, git, host_header, httpx, hunt, iis_shortnames, ntlm, oauth, robots, securitytxt, smuggler, sslcert, telerik, url_manipulation, wappalyzer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-<!-- END BBOT PRESETS -->
+<!-- END OSINTER PRESETS -->

@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "bbot"
+name = "osinter"
 version = "2.4.1"
 description = "OSINT automation for hackers."
 authors = [
@@ -8,9 +8,9 @@ authors = [
 ]
 license = "GPL-3.0"
 readme = "README.md"
-repository = "https://github.com/blacklanternsecurity/bbot"
-homepage = "https://github.com/blacklanternsecurity/bbot"
-documentation = "https://www.blacklanternsecurity.com/bbot/"
+repository = "https://github.com/blacklanternsecurity/osinter"
+homepage = "https://github.com/blacklanternsecurity/osinter"
+documentation = "https://www.blacklanternsecurity.com/osinter/"
 keywords = ["python", "cli", "automation", "osint", "threat-intel", "intelligence", "neo4j", "scanner", "python-library", "hacking", "recursion", "pentesting", "recon", "command-line-tool", "bugbounty", "subdomains", "security-tools", "subdomain-scanner", "osint-framework", "attack-surface", "subdomain-enumeration", "osint-tool"]
 classifiers = [
     "Operating System :: POSIX :: Linux",
@@ -19,10 +19,10 @@ classifiers = [
 
 [tool.poetry.urls]
 "Discord" = "https://discord.com/invite/PZqkgxu5SA"
-"Docker Hub" = "https://hub.docker.com/r/blacklanternsecurity/bbot"
+"Docker Hub" = "https://hub.docker.com/r/blacklanternsecurity/osinter"
 
 [tool.poetry.scripts]
-bbot = 'bbot.cli:main'
+osinter = 'osinter.cli:main'
 
 [tool.poetry.dependencies]
 python = "^3.9"
@@ -87,7 +87,7 @@ mike = "^2.1.2"
 
 [tool.pytest.ini_options]
 env = [
-    "BBOT_TESTING = True",
+    "OSINTER_TESTING = True",
 ]
 asyncio_mode = "auto"
 asyncio_default_fixture_loop_scope = "session"
@@ -98,11 +98,11 @@ build-backend = "poetry_dynamic_versioning.backend"
 
 [tool.codespell]
 ignore-words-list = "bu,cna,couldn,dialin,nd,ned,thirdparty"
-skip = "./docs/javascripts/vega*.js,./bbot/wordlists/*"
+skip = "./docs/javascripts/vega*.js,./osinter/wordlists/*"
 
 [tool.ruff]
 line-length = 119
-format.exclude = ["bbot/test/test_step_1/test_manager_*"]
+format.exclude = ["osinter/test/test_step_1/test_manager_*"]
 lint.select = ["E", "F"]
 lint.ignore = ["E402", "E711", "E713", "E721", "E741", "F401", "F403", "F405", "E501"]
 

@@ -1,12 +1,12 @@
 # Advanced
 
-Below you can find some advanced uses of BBOT.
+Below you can find some advanced uses of OSINTER.
 
-## BBOT as a Python library
+## OSINTER as a Python library
 
 #### Synchronous
 ```python
-from bbot.scanner import Scanner
+from osinter.scanner import Scanner
 
 if __name__ == "__main__":
     scan = Scanner("evilcorp.com", presets=["subdomain-enum"])
@@ -16,7 +16,7 @@ if __name__ == "__main__":
 
 #### Asynchronous
 ```python
-from bbot.scanner import Scanner
+from osinter.scanner import Scanner
 
 async def main():
     scan = Scanner("evilcorp.com", presets=["subdomain-enum"])
@@ -30,9 +30,9 @@ if __name__ == "__main__":
 
 ## Command-Line Help
 
-<!-- BBOT HELP OUTPUT -->
+<!-- OSINTER HELP OUTPUT -->
 ```text
-usage: bbot [-h] [-t TARGET [TARGET ...]] [-w WHITELIST [WHITELIST ...]]
+usage: osinter [-h] [-t TARGET [TARGET ...]] [-w WHITELIST [WHITELIST ...]]
                [-b BLACKLIST [BLACKLIST ...]] [--strict-scope]
                [-p [PRESET ...]] [-c [CONFIG ...]] [-lp]
                [-m MODULE [MODULE ...]] [-l] [-lmo] [-em MODULE [MODULE ...]]
@@ -64,7 +64,7 @@ Target:
 
 Presets:
   -p, --preset [PRESET ...]
-                        Enable BBOT preset(s)
+                        Enable OSINTER preset(s)
   -c, --config [CONFIG ...]
                         Custom config options in key=value format: e.g. 'modules.shodan.api_key=1234'
   -lp, --list-presets   List available presets.
@@ -123,7 +123,7 @@ Module dependencies:
   --install-all-deps    Install dependencies for all modules
 
 Misc:
-  --version             show BBOT version and exit
+  --version             show OSINTER version and exit
   --proxy HTTP_PROXY    Use this proxy for all HTTP requests
   -H, --custom-headers CUSTOM_HEADERS [CUSTOM_HEADERS ...]
                         List of custom headers as key value pairs (header=value).
@@ -135,37 +135,37 @@ Misc:
 EXAMPLES
 
     Subdomains:
-        bbot -t evilcorp.com -p subdomain-enum
+        osinter -t evilcorp.com -p subdomain-enum
 
     Subdomains (passive only):
-        bbot -t evilcorp.com -p subdomain-enum -rf passive
+        osinter -t evilcorp.com -p subdomain-enum -rf passive
 
     Subdomains + port scan + web screenshots:
-        bbot -t evilcorp.com -p subdomain-enum -m portscan gowitness -n my_scan -o .
+        osinter -t evilcorp.com -p subdomain-enum -m portscan gowitness -n my_scan -o .
 
     Subdomains + basic web scan:
-        bbot -t evilcorp.com -p subdomain-enum web-basic
+        osinter -t evilcorp.com -p subdomain-enum web-basic
 
     Web spider:
-        bbot -t www.evilcorp.com -p spider -c web.spider_distance=2 web.spider_depth=2
+        osinter -t www.evilcorp.com -p spider -c web.spider_distance=2 web.spider_depth=2
 
     Everything everywhere all at once:
-        bbot -t evilcorp.com -p kitchen-sink
+        osinter -t evilcorp.com -p kitchen-sink
 
     List modules:
-        bbot -l
+        osinter -l
 
     List output modules:
-        bbot -lo
+        osinter -lo
 
     List presets:
-        bbot -lp
+        osinter -lp
 
     List flags:
-        bbot -lf
+        osinter -lf
 
     Show help for a specific module:
-        bbot -mh <module_name>
+        osinter -mh <module_name>
 
 ```
-<!-- END BBOT HELP OUTPUT -->
+<!-- END OSINTER HELP OUTPUT -->

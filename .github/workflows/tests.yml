@@ -36,7 +36,7 @@ jobs:
           poetry run ruff format --check
       - name: Run tests
         run: |
-          poetry run pytest -vv --reruns 2 -o timeout_func_only=true --timeout 1200 --disable-warnings --log-cli-level=INFO --cov-config=bbot/test/coverage.cfg --cov-report xml:cov.xml --cov=bbot .
+          poetry run pytest -vv --reruns 2 -o timeout_func_only=true --timeout 1200 --disable-warnings --log-cli-level=INFO --cov-config=osinter/test/coverage.cfg --cov-report xml:cov.xml --cov=osinter .
       - name: Upload Debug Logs
         if: always()
         uses: actions/upload-artifact@v4
@@ -75,41 +75,41 @@ jobs:
         uses: pypa/gh-action-pypi-publish@release/v1.12
         with:
           password: ${{ secrets.PYPI_API_TOKEN }}
-      - name: Get BBOT version
+      - name: Get OSINTER version
         id: version
-        run: echo "BBOT_VERSION=$(poetry version | cut -d' ' -f2)" >> $GITHUB_OUTPUT
+        run: echo "OSINTER_VERSION=$(poetry version | cut -d' ' -f2)" >> $GITHUB_OUTPUT
       - name: Publish to Docker Hub (dev)
         if: github.event_name == 'push' && github.ref == 'refs/heads/dev'
         uses: elgohr/Publish-Docker-Github-Action@v5
         with:
-          name: blacklanternsecurity/bbot
+          name: blacklanternsecurity/osinter
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-          tags: "latest,dev,${{ steps.version.outputs.BBOT_VERSION }}"
+          tags: "latest,dev,${{ steps.version.outputs.OSINTER_VERSION }}"
       - name: Publish to Docker Hub (stable)
         if: github.event_name == 'push' && github.ref == 'refs/heads/stable'
         uses: elgohr/Publish-Docker-Github-Action@v5
         with:
-          name: blacklanternsecurity/bbot
+          name: blacklanternsecurity/osinter
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-          tags: "stable,${{ steps.version.outputs.BBOT_VERSION }}"
+          tags: "stable,${{ steps.version.outputs.OSINTER_VERSION }}"
       - name: Docker Hub Description
         if: github.event_name == 'push' && github.ref == 'refs/heads/dev'
         uses: peter-evans/dockerhub-description@v4
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: blacklanternsecurity/bbot
+          repository: blacklanternsecurity/osinter
     outputs:
-      BBOT_VERSION: ${{ steps.version.outputs.BBOT_VERSION }}
+      OSINTER_VERSION: ${{ steps.version.outputs.OSINTER_VERSION }}
   publish_docs:
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && (github.ref == 'refs/heads/stable' || github.ref == 'refs/heads/dev')
     steps:
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.BBOT_DOCS_UPDATER_PAT }}
+          token: ${{ secrets.OSINTER_DOCS_UPDATER_PAT }}
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -161,7 +161,7 @@ jobs:
   #         git config --local user.name "GitHub Actions"
   #     - name: Tag commit
   #       run: |
-  #         VERSION="${{ needs.publish_code.outputs.BBOT_VERSION }}"
+  #         VERSION="${{ needs.publish_code.outputs.OSINTER_VERSION }}"
   #         if [[ "${{ github.ref }}" == "refs/heads/dev" ]]; then
   #           TAG_MESSAGE="Dev Release $VERSION"
   #         elif [[ "${{ github.ref }}" == "refs/heads/stable" ]]; then

@@ -1,9 +1,9 @@
-This is a developer reference. For a high-level description of BBOT events including a full list of event types, see [Events](../../scanning/events)
+This is a developer reference. For a high-level description of OSINTER events including a full list of event types, see [Events](../../scanning/events)
 
-::: bbot.core.event.base.make_event
-::: bbot.core.event.base.event_from_json
+::: osinter.core.event.base.make_event
+::: osinter.core.event.base.event_from_json
 
-::: bbot.core.event.base.BaseEvent
+::: osinter.core.event.base.BaseEvent
     options:
       members:
         - __init__

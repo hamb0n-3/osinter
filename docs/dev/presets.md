@@ -1,1 +1,1 @@
-::: bbot.scanner.Preset
+::: osinter.scanner.Preset

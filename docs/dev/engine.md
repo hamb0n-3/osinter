@@ -1,5 +1,5 @@
-::: bbot.core.engine.EngineBase
+::: osinter.core.engine.EngineBase
 
-::: bbot.core.engine.EngineClient
+::: osinter.core.engine.EngineClient
 
-::: bbot.core.engine.EngineServer
+::: osinter.core.engine.EngineServer

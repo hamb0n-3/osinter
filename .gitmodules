@@ -1,4 +1,4 @@
-[submodule "bbot/modules/playground"]
-    path = bbot/modules/playground
-    url = https://github.com/blacklanternsecurity/bbot-module-playground
+[submodule "osinter/modules/playground"]
+    path = osinter/modules/playground
+    url = https://github.com/blacklanternsecurity/osinter-module-playground
     branch = main

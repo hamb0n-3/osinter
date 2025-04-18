@@ -1,1 +1,1 @@
-::: bbot.core.core.BBOTCore
+::: osinter.core.core.OSINTERCore

@@ -9,16 +9,16 @@ assignees: ""
 **Describe the bug**
 What happened vs what was expected?
 
-**BBOT Command**
-Example: `bbot -m httpx -t evilcorp.com`
+**OSINTER Command**
+Example: `osinter -m httpx -t evilcorp.com`
 
-**OS, BBOT Installation Method + Version**
-Example: `OS: Arch Linux, Installation method: pip, BBOT version: 1.0.3.545`
-Note: You can get the BBOT version with `bbot --version`
-Note: BBOT is designed from the ground up to run on Linux. Windows and MacOS are not officially supported. If you are using one of these platforms, it's recommended to use Docker.
+**OS, OSINTER Installation Method + Version**
+Example: `OS: Arch Linux, Installation method: pip, OSINTER version: 1.0.3.545`
+Note: You can get the OSINTER version with `osinter --version`
+Note: OSINTER is designed from the ground up to run on Linux. Windows and MacOS are not officially supported. If you are using one of these platforms, it's recommended to use Docker.
 
-**BBOT Config**
-Attach your full BBOT preset (to show it, add `--current-preset` to your BBOT command).
+**OSINTER Config**
+Attach your full OSINTER preset (to show it, add `--current-preset` to your OSINTER command).
 
 **Logs/Screenshots**
 If possible, produce the bug while `--debug` is enabled, and attach the relevant parts of the output.
