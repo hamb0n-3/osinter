@@ -26,7 +26,7 @@ osinter -t evilcorp.com -p subdomain-enum
 osinter -t evilcorp.com -p subdomain-enum -rf passive
 ```
 
-<!-- BBOT SUBDOMAIN-ENUM PRESET EXPANDABLE -->
+<!-- OSINTER SUBDOMAIN-ENUM PRESET EXPANDABLE -->
 
 <details>
 <summary><b><code>subdomain-enum.yml</code></b></summary>
@@ -59,9 +59,9 @@ config:
 
 </details>
 
-<!-- END BBOT SUBDOMAIN-ENUM PRESET EXPANDABLE -->
+<!-- END OSINTER SUBDOMAIN-ENUM PRESET EXPANDABLE -->
 
-BBOT consistently finds 20-50% more subdomains than other tools. The bigger the domain, the bigger the difference. To learn how this is possible, see [How It Works](https://www.blacklanternsecurity.com/osinter/Dev/how_it_works/).
+OSINTER consistently finds 20-50% more subdomains than other tools. The bigger the domain, the bigger the difference. To learn how this is possible, see [How It Works](https://www.blacklanternsecurity.com/osinter/Dev/how_it_works/).
 
 ![subdomain-stats-ebay](https://github.com/blacklanternsecurity/osinter/assets/20261699/de3e7f21-6f52-4ac4-8eab-367296cd385f)
 
@@ -72,7 +72,7 @@ BBOT consistently finds 20-50% more subdomains than other tools. The bigger the 
 osinter -t evilcorp.com -p spider
 ```
 
-<!-- BBOT SPIDER PRESET EXPANDABLE -->
+<!-- OSINTER SPIDER PRESET EXPANDABLE -->
 
 <details>
 <summary><b><code>spider.yml</code></b></summary>
@@ -100,7 +100,7 @@ config:
 
 </details>
 
-<!-- END BBOT SPIDER PRESET EXPANDABLE -->
+<!-- END OSINTER SPIDER PRESET EXPANDABLE -->
 
 ### 3) Email Gatherer
 
@@ -112,7 +112,7 @@ osinter -t evilcorp.com -p email-enum
 osinter -t evilcorp.com -p email-enum subdomain-enum spider
 ```
 
-<!-- BBOT EMAIL-ENUM PRESET EXPANDABLE -->
+<!-- OSINTER EMAIL-ENUM PRESET EXPANDABLE -->
 
 <details>
 <summary><b><code>email-enum.yml</code></b></summary>
@@ -130,7 +130,7 @@ output_modules:
 
 </details>
 
-<!-- END BBOT EMAIL-ENUM PRESET EXPANDABLE -->
+<!-- END OSINTER EMAIL-ENUM PRESET EXPANDABLE -->
 
 ### 4) Web Scanner
 
@@ -142,7 +142,7 @@ osinter -t www.evilcorp.com -p web-basic
 osinter -t www.evilcorp.com -p web-thorough
 ```
 
-<!-- BBOT WEB-BASIC PRESET EXPANDABLE -->
+<!-- OSINTER WEB-BASIC PRESET EXPANDABLE -->
 
 <details>
 <summary><b><code>web-basic.yml</code></b></summary>
@@ -160,9 +160,9 @@ flags:
 
 </details>
 
-<!-- END BBOT WEB-BASIC PRESET EXPANDABLE -->
+<!-- END OSINTER WEB-BASIC PRESET EXPANDABLE -->
 
-<!-- BBOT WEB-THOROUGH PRESET EXPANDABLE -->
+<!-- OSINTER WEB-THOROUGH PRESET EXPANDABLE -->
 
 <details>
 <summary><b><code>web-thorough.yml</code></b></summary>
@@ -181,7 +181,7 @@ flags:
 
 </details>
 
-<!-- END BBOT WEB-THOROUGH PRESET EXPANDABLE -->
+<!-- END OSINTER WEB-THOROUGH PRESET EXPANDABLE -->
 
 ### 5) Everything Everywhere All at Once
 
@@ -193,7 +193,7 @@ osinter -t evilcorp.com -p kitchen-sink --allow-deadly
 osinter -t evilcorp.com -p subdomain-enum cloud-enum code-enum email-enum spider web-basic paramminer dirbust-light web-screenshots --allow-deadly
 ```
 
-<!-- BBOT KITCHEN-SINK PRESET EXPANDABLE -->
+<!-- OSINTER KITCHEN-SINK PRESET EXPANDABLE -->
 
 <details>
 <summary><b><code>kitchen-sink.yml</code></b></summary>
@@ -222,7 +222,7 @@ config:
 
 </details>
 
-<!-- END BBOT KITCHEN-SINK PRESET EXPANDABLE -->
+<!-- END OSINTER KITCHEN-SINK PRESET EXPANDABLE -->
 
 ## How it Works
 
@@ -244,7 +244,7 @@ config:
 
 ...and [more](docs/scanning/output.md)!
 
-## BBOT as a Python Library
+## OSINTER as a Python Library
 
 #### Synchronous
 ```python
@@ -273,7 +273,7 @@ if __name__ == "__main__":
 <details>
 <summary><b>SEE: This Nefarious Discord Bot</b></summary>
 
-A [BBOT Discord Bot](https://www.blacklanternsecurity.com/osinter/Stable/dev/#discord-bot-example) that responds to the `/scan` command. Scan the internet from the comfort of your discord server!
+A [OSINTER Discord Bot](https://www.blacklanternsecurity.com/osinter/Stable/dev/#discord-bot-example) that responds to the `/scan` command. Scan the internet from the comfort of your discord server!
 
 ![osinter-discord](https://github.com/blacklanternsecurity/osinter/assets/20261699/22b268a2-0dfd-4c2a-b7c5-548c0f2cc6f9)
 
@@ -292,7 +292,7 @@ A [BBOT Discord Bot](https://www.blacklanternsecurity.com/osinter/Stable/dev/#di
 
 ## Targets
 
-BBOT accepts an unlimited number of targets via `-t`. You can specify targets either directly on the command line or in files (or both!):
+OSINTER accepts an unlimited number of targets via `-t`. You can specify targets either directly on the command line or in files (or both!):
 
 ```bash
 osinter -t evilcorp.com evilcorp.org 1.2.3.0/24 -p subdomain-enum
@@ -311,11 +311,11 @@ Targets can be any of the following:
 - Filesystem (`FILESYSTEM:/tmp/asdf`)
 - Mobile App (`MOBILE_APP:https://play.google.com/store/apps/details?id=com.evilcorp.app`)
 
-For more information, see [Targets](https://www.blacklanternsecurity.com/osinter/Stable/scanning/#targets-t). To learn how BBOT handles scope, see [Scope](https://www.blacklanternsecurity.com/osinter/Stable/scanning/#scope).
+For more information, see [Targets](https://www.blacklanternsecurity.com/osinter/Stable/scanning/#targets-t). To learn how OSINTER handles scope, see [Scope](https://www.blacklanternsecurity.com/osinter/Stable/scanning/#scope).
 
 ## API Keys
 
-Similar to Amass or Subfinder, BBOT supports API keys for various third-party services such as SecurityTrails, etc.
+Similar to Amass or Subfinder, OSINTER supports API keys for various third-party services such as SecurityTrails, etc.
 
 The standard way to do this is to enter your API keys in **`~/.config/osinter/osinter.yml`**. Note that multiple API keys are allowed:
 ```yaml
@@ -351,7 +351,7 @@ For details, see [Configuration](https://www.blacklanternsecurity.com/osinter/St
 
 ## Documentation
 
-<!-- BBOT DOCS TOC -->
+<!-- OSINTER DOCS TOC -->
 - **User Manual**
     - **Basics**
         - [Getting Started](https://www.blacklanternsecurity.com/osinter/Stable/)
@@ -378,8 +378,8 @@ For details, see [Configuration](https://www.blacklanternsecurity.com/osinter/St
 - **Developer Manual**
     - [Development Overview](https://www.blacklanternsecurity.com/osinter/Stable/dev/)
     - [Setting Up a Dev Environment](https://www.blacklanternsecurity.com/osinter/Stable/dev/dev_environment)
-    - [BBOT Internal Architecture](https://www.blacklanternsecurity.com/osinter/Stable/dev/architecture)
-    - [How to Write a BBOT Module](https://www.blacklanternsecurity.com/osinter/Stable/dev/module_howto)
+    - [OSINTER Internal Architecture](https://www.blacklanternsecurity.com/osinter/Stable/dev/architecture)
+    - [How to Write a OSINTER Module](https://www.blacklanternsecurity.com/osinter/Stable/dev/module_howto)
     - [Unit Tests](https://www.blacklanternsecurity.com/osinter/Stable/dev/tests)
     - [Discord Bot Example](https://www.blacklanternsecurity.com/osinter/Stable/dev/discord_bot)
     - **Code Reference**
@@ -388,7 +388,7 @@ For details, see [Configuration](https://www.blacklanternsecurity.com/osinter/St
         - [Event](https://www.blacklanternsecurity.com/osinter/Stable/dev/event)
         - [Target](https://www.blacklanternsecurity.com/osinter/Stable/dev/target)
         - [BaseModule](https://www.blacklanternsecurity.com/osinter/Stable/dev/basemodule)
-        - [BBOTCore](https://www.blacklanternsecurity.com/osinter/Stable/dev/core)
+        - [OSINTERCore](https://www.blacklanternsecurity.com/osinter/Stable/dev/core)
         - [Engine](https://www.blacklanternsecurity.com/osinter/Stable/dev/engine)
         - **Helpers**
             - [Overview](https://www.blacklanternsecurity.com/osinter/Stable/dev/helpers/)
@@ -398,15 +398,15 @@ For details, see [Configuration](https://www.blacklanternsecurity.com/osinter/St
             - [Miscellaneous](https://www.blacklanternsecurity.com/osinter/Stable/dev/helpers/misc)
             - [Web](https://www.blacklanternsecurity.com/osinter/Stable/dev/helpers/web)
             - [Word Cloud](https://www.blacklanternsecurity.com/osinter/Stable/dev/helpers/wordcloud)
-<!-- END BBOT DOCS TOC -->
+<!-- END OSINTER DOCS TOC -->
 
 ## Contribution
 
-Some of the best BBOT modules were written by the community. BBOT is being constantly improved; every day it grows more powerful!
+Some of the best OSINTER modules were written by the community. OSINTER is being constantly improved; every day it grows more powerful!
 
-We welcome contributions. Not just code, but ideas too! If you have an idea for a new feature, please let us know in [Discussions](https://github.com/blacklanternsecurity/osinter/discussions). If you want to get your hands dirty, see [Contribution](https://www.blacklanternsecurity.com/osinter/Stable/contribution/). There you can find setup instructions and a simple tutorial on how to write a BBOT module. We also have extensive [Developer Documentation](https://www.blacklanternsecurity.com/osinter/Stable/dev/).
+We welcome contributions. Not just code, but ideas too! If you have an idea for a new feature, please let us know in [Discussions](https://github.com/blacklanternsecurity/osinter/discussions). If you want to get your hands dirty, see [Contribution](https://www.blacklanternsecurity.com/osinter/Stable/contribution/). There you can find setup instructions and a simple tutorial on how to write a OSINTER module. We also have extensive [Developer Documentation](https://www.blacklanternsecurity.com/osinter/Stable/dev/).
 
-Thanks to these amazing people for contributing to BBOT! :heart:
+Thanks to these amazing people for contributing to OSINTER! :heart:
 
 <p align="center">
 <a href="https://github.com/blacklanternsecurity/osinter/graphs/contributors">
@@ -416,8 +416,8 @@ Thanks to these amazing people for contributing to BBOT! :heart:
 
 Special thanks to:
 
-- @TheTechromancer for creating BBOT
-- @liquidsec for his extensive work on BBOT's web hacking features, including [badsecrets](https://github.com/blacklanternsecurity/badsecrets) and [baddns](https://github.com/blacklanternsecurity/baddns)
+- @TheTechromancer for creating OSINTER
+- @liquidsec for his extensive work on OSINTER's web hacking features, including [badsecrets](https://github.com/blacklanternsecurity/badsecrets) and [baddns](https://github.com/blacklanternsecurity/baddns)
 - Steve Micallef (@smicallef) for creating Spiderfoot
 - @kerrymilan for his Neo4j and Ansible expertise
 - @domwhewell-sage for his family of badass code-looting modules
