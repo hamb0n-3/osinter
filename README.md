@@ -1,12 +1,6 @@
-[![osinter_banner](https://github.com/user-attachments/assets/f02804ce-9478-4f1e-ac4d-9cf5620a3214)](https://github.com/blacklanternsecurity/osinter)
+### This is a fork from bbot by https://github.com/blacklanternsecurity/
 
-[![Python Version](https://img.shields.io/badge/python-3.9+-FF8400)](https://www.python.org) [![License](https://img.shields.io/badge/license-GPLv3-FF8400.svg)](https://github.com/blacklanternsecurity/osinter/blob/dev/LICENSE) [![DEF CON Recon Village 2024](https://img.shields.io/badge/DEF%20CON%20Demo%20Labs-2023-FF8400.svg)](https://www.reconvillage.org/talks) [![PyPi Downloads](https://static.pepy.tech/personalized-badge/osinter?right_color=orange&left_color=grey)](https://pepy.tech/project/osinter) [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff) [![Tests](https://github.com/blacklanternsecurity/osinter/actions/workflows/tests.yml/badge.svg?branch=stable)](https://github.com/blacklanternsecurity/osinter/actions?query=workflow%3A"tests") [![Codecov](https://codecov.io/gh/blacklanternsecurity/osinter/branch/dev/graph/badge.svg?token=IR5AZBDM5K)](https://codecov.io/gh/blacklanternsecurity/osinter) [![Discord](https://img.shields.io/discord/859164869970362439)](https://discord.com/invite/PZqkgxu5SA)
-
-### **BEE·bot** is a multipurpose scanner inspired by [Spiderfoot](https://github.com/smicallef/spiderfoot), built to automate your **Recon**, **Bug Bounties**, and **ASM**!
-
-https://github.com/blacklanternsecurity/osinter/assets/20261699/e539e89b-92ea-46fa-b893-9cde94eebf81
-
-_A BBOT scan in real-time - visualization with [VivaGraphJS](https://github.com/blacklanternsecurity/osinter-vivagraphjs)_
+_An osinter scan in real-time - visualization with [VivaGraphJS](https://github.com/blacklanternsecurity/osinter-vivagraphjs)_
 
 ## Installation
 
@@ -17,8 +11,6 @@ pipx install osinter
 # bleeding edge (dev branch)
 pipx install --pip-args '\--pre' osinter
 ```
-
-_For more installation methods, including [Docker](https://hub.docker.com/r/blacklanternsecurity/osinter), see [Getting Started](https://www.blacklanternsecurity.com/osinter/Stable/)_
 
 ## Example Commands
 
