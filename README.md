@@ -226,10 +226,6 @@ config:
 
 ## How it Works
 
-Click the graph below to explore the [inner workings](https://www.blacklanternsecurity.com/osinter/Stable/how_it_works/) of BBOT.
-
-[![image](https://github.com/blacklanternsecurity/osinter/assets/20261699/e55ba6bd-6d97-48a6-96f0-e122acc23513)](https://www.blacklanternsecurity.com/osinter/Stable/how_it_works/)
-
 ## Output Modules
 
 - [Neo4j](docs/scanning/output.md#neo4j)
