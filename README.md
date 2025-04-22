@@ -1,4 +1,4 @@
-### This is a fork from bbot by https://github.com/blacklanternsecurity/
+### ** This is a fork from bbot by https://github.com/blacklanternsecurity/ **
 
 _An osinter scan in real-time - visualization with [VivaGraphJS](https://github.com/blacklanternsecurity/osinter-vivagraphjs)_
 
