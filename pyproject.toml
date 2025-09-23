@@ -8,7 +8,7 @@ authors = [
 ]
 license = "GPL-3.0"
 readme = "README.md"
-repository = "https://github.com/blacklanternsecurity/osinter"
+repository = "https://github.com/tristanp299/osinter"
 homepage = "https://github.com/blacklanternsecurity/osinter"
 documentation = "https://www.blacklanternsecurity.com/osinter/"
 keywords = ["python", "cli", "automation", "osint", "threat-intel", "intelligence", "neo4j", "scanner", "python-library", "hacking", "recursion", "pentesting", "recon", "command-line-tool", "bugbounty", "subdomains", "security-tools", "subdomain-scanner", "osint-framework", "attack-surface", "subdomain-enumeration", "osint-tool"]
